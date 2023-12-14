@@ -19,7 +19,7 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
           maven-version: '3.8.4'
-          
+
       - name: Build with Maven
         run: mvn clean install -f TourGuide/TourGuide/pom.xml
 
@@ -28,3 +28,4 @@ jobs:
         with:
           name: app-jar
           path: TourGuide/TourGuide/target/*.jar
+
